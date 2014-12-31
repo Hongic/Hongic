@@ -74,12 +74,6 @@ func (this *baseController) getOption(name string) string {
 	}
 }
 
-/**
- * [func description]
- * @param  {[type]}
- * @return {[type]}
- *
- */
 func (this *baseController) setHeadMetas(params ...string) {
 	title_buf := make([]string, 0, 3)
 	if len(params) == 0 && this.getOption("subtitle") != "" {

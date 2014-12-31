@@ -10,7 +10,17 @@ type MainController struct {
 	baseController
 }
 
-//首页, 只显示前N条
+/**
+ * 资料一下
+ */
+func (this *MainController) About() {
+
+	this.display("me")
+}
+
+/**
+ * //首页, 只显示前N条
+ */
 
 func (this *MainController) Index() {
 	var list []*models.Post

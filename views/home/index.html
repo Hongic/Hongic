@@ -20,7 +20,7 @@
   <p class="lifedateview">
     <span>{{date $v.Posttime "Y-m-j"}}</span>
     <span>作者：{{$v.Author}}</span>
-    <span>所属分类：[{{str2html $v.TagsLink}}]</span>
+    <span>所属分类:【&nbsp;{{str2html $v.TagsLink}}&nbsp;】</span>
   </p>
   {{end}}
   {{str2html .pagebar}}
