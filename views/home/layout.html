@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>{{.title}}</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
         <meta name="keywords" content="{{.keywords}}">
         <meta name="description" content="{{.description}}">
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
         <link href="{{.root}}css/base.css" rel="stylesheet">
         {{str2html .hidejs}}
     </head>
@@ -14,8 +17,8 @@
         {{.banner}}
         {{.middle}}
         <article>
-            {{.LayoutContent}}
-            {{.right}}
+        {{.LayoutContent}}
+        {{.right}}
         </article>
         {{.foot}}
     </body>

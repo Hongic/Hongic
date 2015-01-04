@@ -2,11 +2,13 @@
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 body {
     font: 12px "宋体", Arial, Helvetica, sans-serif;
-    color: #756F71
+    color: #756F71;
+    background: url("../images/bg.jpg") repeat center top fixed!important;
+   
 }
 img {
     border: 0;
@@ -73,7 +75,6 @@ nav a:hover {
     text-align: center;
 }
 .topnav a span:last-child {
-    text-align: center;
     z-index: 1;
     display: block;
     color: #999;
@@ -88,24 +89,23 @@ nav a:hover {
     text-align: center
 }
 .topnav a:hover span:last-child, .topnav a:focus span:last-child {
-    text-align: center;
     opacity: 1;
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
     transform: translateY(0%);
+    text-align: center;
 }
 #topnav_current {
     color: #e15782;
 }
 .en {
     color: #999;
-    padding-top: 5px;
-    font-size: 18px;
-    font-weight: bolder;
-    text-align: center;
+    font-size: 13px;
     z-index: 1;
     display: block;
     letter-spacing: 1px;
+    padding-top: 13px;
+    text-align: center;
 }
 /* ie */
 
@@ -126,10 +126,9 @@ footer {
 }
 h1.t_nav span {
     float: right;
-    color: #000;
+    color: #999;
     background: url(../images/5849.png) no-repeat left center;
-    padding-left: 20px;
-    font-size: 13px;
+    padding-left: 20px
 }
 h1.t_nav span a {
     margin: 0 5px
@@ -149,18 +148,10 @@ a.n1, a.n2 {
     float: left
 }
 .n1 {
-    font-size: 18px;
-    background: #000;
-    border-radius: 13px;
-    -moz-border-radius: 13px;
-    --webkit-border-radius: 13px;
+    background: #5EA51B;
 }
 .n2 {
-    font-size: 18px;
     background: #8BBF5D;
-    border-radius: 13px;
-    -moz-border-radius: 13px;
-    --webkit-border-radius: 13px;
 }
 /*右边栏样式*/
 
@@ -615,6 +606,9 @@ aside .rnav ul li a:hover {
     color: #fff;
     text-align: center;
     box-shadow: #999 4px 5px 1px;
+    border-radius: 6px;
+    --webkit-border-radius: 6px;
+    --moz-border-radius: 6px;
 }
 .template h3 p span {
     color: #38b3d4;
@@ -635,10 +629,14 @@ aside .rnav ul li a:hover {
 .template li img {
     width: 142px;
     height: 80px;
-    background: #FFF;
-    padding: 4px;
+    /* background: #FFF; */
+    
+    padding: 0px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
     display: block;
+    border-radius: 6px;
+    --webkit-border-radius: 6px;
+    --moz-border-radius: 6px;
 }
 .template li span {
     color: #F1F0EE;
@@ -648,11 +646,17 @@ aside .rnav ul li a:hover {
     width: 142px;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 14px
+    height: 14px;
+    border-radius: 6px;
+    --webkit-border-radius: 6px;
+    --moz-border-radius: 6px;
 }
 .template li:hover {
     background: #666;
     padding: 5px 5px 6px 5px;
+    border-radius: 6px;
+    --webkit-border-radius: 6px;
+    --moz-border-radius: 6px;
 }
 h2.title_tj {
     font: 18px "微软雅黑", Arial, Helvetica, sans-serif;
@@ -755,22 +759,54 @@ h2.title_tj p {
 }
 .bloglist h3 {
     margin: 20px 0 10px 0;
-    color: #333
+    font-size: 18px;
+    color: #333;
+    border-radius: 10px;
+    --webkit-border-radius: 10px;
+    --moz-border-radius: 10px;
+}
+.bloglist h3 a {
+    padding: 8px 10px;
+    color: #fff;
+    background-color: #09d;
+    border-radius: 10px;
+    --webkit-border-radius: 10px;
+    --moz-border-radius: 10px;
+}
+.bloglist h3 a:hover {
+    padding: 8px 10px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 10px;
+    --webkit-border-radius: 10px;
+    --moz-border-radius: 10px;
 }
 .bloglist figure {
     float: left;
     width: 183px;
 }
 .bloglist figure img {
-    padding: 4px;
+    margin-top: 13px;
+    padding: 0px;
     border: #f4f2f2 1px solid;
     width: 175px;
+    border-radius: 10px;
+    --webkit-border-radius: 10px;
+    --moz-border-radius: 10px;
 }
 .bloglist ul {
     float: left;
     width: 520px;
     margin: 10px 0px 0 15px;
     line-height: 20px;
+    border-radius: 10px;
+    --webkit-border-radius: 10px;
+    --moz-border-radius: 10px;
+}
+.bloglist ul a {
+    border-radius: 10px;
+    --webkit-border-radius: 10px;
+    --moz-border-radius: 10px;
 }
 .lifedateview {
     width: 695px;
@@ -782,7 +818,10 @@ h2.title_tj p {
     line-height: 26px;
     height: 26px;
     color: #838383;
-    padding-left: 25px
+    padding-left: 25px;
+    border-radius: 6px;
+    --webkit-border-radius: 6px;
+    --moz-border-radius: 6px;
 }
 .lifedateview span {
     margin: 0 10px;
@@ -1001,21 +1040,4 @@ ul.infos p img {
 }
 .otherlink li a:hover {
     text-decoration: underline
-}
-.bloglist h3 a{
-    background-color: #069;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 13px;
-    -moz-border-radius: 13px;
-    --webkit-border-radius: 13px;
-}
-.bloglist h3 a:hover{
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-
-    border-radius: 13px;
-    -moz-border-radius: 13px;
-    --webkit-border-radius: 13px;
 }

@@ -16,18 +16,19 @@ func init() {
 	beego.Router("/", &blog.MainController{}, "*:Index")
 	beego.Router("/404.html", &blog.MainController{}, "*:Go404")
 	beego.Router("/index:page:int.html", &blog.MainController{}, "*:Index")
-
+	/* 关于我 */
 	beego.Router("/about.html", &blog.MainController{}, "*:About")
 
+	/* 文章 */
 	beego.Router("/article/:id:int", &blog.MainController{}, "*:Show")      //ID访问
 	beego.Router("/article/:urlname(.+)", &blog.MainController{}, "*:Show") //别名访问文章
 
 	beego.Router("/category/:name(.+?)", &blog.MainController{}, "*:Category")
 	beego.Router("/category/:name(.+?)/page/:page:int", &blog.MainController{}, "*:Category")
-
+	/* 千锤百炼 */
 	beego.Router("/life:page:int.html", &blog.MainController{}, "*:BlogList")
 	beego.Router("/life.html", &blog.MainController{}, "*:BlogList")
-
+	/* 千言万语 */
 	beego.Router("/mood.html", &blog.MainController{}, "*:Mood")
 	beego.Router("/mood:page:int.html", &blog.MainController{}, "*:Mood")
 
