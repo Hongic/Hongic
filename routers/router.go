@@ -16,8 +16,6 @@ func init() {
 	beego.Router("/", &blog.MainController{}, "*:Index")
 	beego.Router("/404.html", &blog.MainController{}, "*:Go404")
 	beego.Router("/index:page:int.html", &blog.MainController{}, "*:Index")
-	/* 关于我 */
-	beego.Router("/about.html", &blog.MainController{}, "*:About")
 
 	/* 文章 */
 	beego.Router("/article/:id:int", &blog.MainController{}, "*:Show")      //ID访问
@@ -34,7 +32,7 @@ func init() {
 
 	//照片展示
 	beego.Router("/photo.html", &blog.MainController{}, "*:Photo")
-	beego.Router("/photo:page/:int.html", &blog.MainController{}, "*:Photo")
+	beego.Router("/photo:page:int.html", &blog.MainController{}, "*:Photo")
 
 	//相册展示
 	beego.Router("/album.html", &blog.MainController{}, "*:Album")

@@ -11,14 +11,6 @@ type MainController struct {
 }
 
 /**
- * 资料一下
- */
-func (this *MainController) About() {
-
-	this.display("me")
-}
-
-/**
  * //首页, 只显示前N条
  */
 
@@ -71,7 +63,7 @@ func (this *MainController) Mood() {
 		query.OrderBy("-posttime").Limit(this.pagesize, (this.page-1)*this.pagesize).All(&list)
 	}
 	this.Data["list"] = list
-	this.setHeadMetas("激情澎湃")
+	this.setHeadMetas("千言万语")
 	this.right = ""
 	this.Data["pagebar"] = models.NewPager(int64(this.page), int64(count), int64(this.pagesize), "/mood%d.html").ToString()
 	this.display("mood")

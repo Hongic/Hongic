@@ -8,7 +8,6 @@ body {
     font: 12px "宋体", Arial, Helvetica, sans-serif;
     color: #756F71;
     background: url("../images/bg.jpg") repeat center top fixed!important;
-   
 }
 img {
     border: 0;
@@ -161,8 +160,14 @@ a.n1, a.n2 {
     margin-top: 20px
 }
 .news h3 p {
+    text-align: center;
     background: #fff;
-    width: 70px
+    width: 70px;
+    margin-left: 56px;
+    padding: 6px 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    --moz-border-radius: 30px;
 }
 .news h3 span {
     color: #65b020
@@ -199,11 +204,11 @@ a.n1, a.n2 {
     margin: 10px 0
 }
 .paih li {
-    line-height: 30px;
+    line-height: 31px;
     height: 30px;
     overflow: hidden;
     padding-left: 24px;
-    border-bottom: #CCC dotted 1px
+    border-bottom: #CCC dotted 1px;
 }
 .website {
     margin: 10px 0;
@@ -222,13 +227,17 @@ a.n1, a.n2 {
     height: 26px;
 }
 .weixin {
-    background: url(../images/weixin.jpg) no-repeat;
+    /* background: url(../images/weixin.jpg) no-repeat; */
+    
     width: 100%;
     display: inline-block;
-    height: 250px;
+    height: 280px;
     overflow: hidden;
     margin: 10px 0;
-    clear: both
+    clear: both;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    --moz-border-radius: 10px;
 }
 aside .rnav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
@@ -322,9 +331,12 @@ aside .rnav ul li a:hover {
 
 .aboutme {
     color: #696969;
-    background: url(../images/aboutphoto.jpg) no-repeat;
+    // background: url(../images/aboutphoto.jpg) no-repeat;
     width: 242px;
-    height: 240px;
+    height: 242px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    --moz-border-radius: 10px;
 }
 .book {
     width: 710px;
@@ -960,6 +972,11 @@ a.readmore {
 }
 .sy {
     overflow: hidden;
+}
+.sy img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
 }
 /*new*/
 
