@@ -41,9 +41,9 @@ func (this *MainController) BlogList() {
 	this.display("life")
 }
 
-//留言板
+//品茶论道
 func (this *MainController) Book() {
-	this.setHeadMetas("品茶论道")
+	this.setHeadMetas("品茶论贱")
 	this.right = "about.html"
 	this.display("book")
 }
@@ -54,7 +54,7 @@ func (this *MainController) Go404() {
 	this.display("404")
 }
 
-//说说
+//千言万语
 func (this *MainController) Mood() {
 	var list []*models.Mood
 	query := new(models.Mood).Query()
@@ -88,7 +88,7 @@ func (this *MainController) Photo() {
 	this.display("photo")
 }
 
-//相册展示
+//纪念曾经 相册展示
 func (this *MainController) Album() {
 	pagesize, _ := strconv.Atoi(this.getOption("albumsize"))
 	if pagesize < 1 {

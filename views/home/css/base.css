@@ -7,7 +7,7 @@
 body {
     font: 12px "宋体", Arial, Helvetica, sans-serif;
     color: #756F71;
-    background: url("../images/bg.jpg") repeat center top fixed!important;
+    background: url("../images/bg.jpg") repeat center top fixed !important;
 }
 img {
     border: 0;
@@ -19,6 +19,7 @@ ul {
 a:link, a:visited {
     text-decoration: none;
     color: #333;
+    outline: none;
 }
 .left {
     float: left;
@@ -118,10 +119,12 @@ aside {
 }
 footer {
     text-align: center;
-    line-height: 40px;
+    vertical-align: middle;
+    line-height: 30px;
     border-top: #E8E8E8 1px solid;
-    width: 1000px;
-    margin: auto
+    width: 100%;
+    margin: auto;
+
 }
 h1.t_nav span {
     float: right;
@@ -336,7 +339,7 @@ aside .rnav ul li a:hover {
     height: 242px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
-    --moz-border-radius: 10px;
+    -moz-border-radius: 10px;
 }
 .book {
     width: 710px;
@@ -345,6 +348,7 @@ aside .rnav ul li a:hover {
     line-height: 22px;
     margin: 20px auto;
     padding-right: 30px;
+
 }
 .about_c {
     padding: 0px 0 0 10px;
